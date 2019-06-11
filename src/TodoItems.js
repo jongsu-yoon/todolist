@@ -21,20 +21,20 @@ class TodoItems extends Component {
 				 key={item.key}>{item.text}</li>
 	}
 
-    // componentWillReceiveProps() {
-    // 	console.log("TodoItems::componentWillReceiveProps");
-    // }
-    //
-    // shouldComponentUpdate(nextProps, nextState) {
-    //     console.log("TodoItems::shouldComponentUpdate");
-    //     console.log(nextProps);
-    //     console.log(nextState);
-    //     return true;
-    // }
-    //
-    // componentWillUpdate() {
-    // 	console.log("TodoItems::componentWillUpdate");
-    // }
+    componentWillReceiveProps() {
+    	console.log("TodoItems::componentWillReceiveProps");
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log("TodoItems::shouldComponentUpdate");
+        console.log(nextProps);
+        console.log(nextState);
+        return true;
+    }
+
+    componentWillUpdate() {
+    	console.log("TodoItems::componentWillUpdate");
+    }
 
 	render() {
         console.log("TodoItems::render");
